@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/edName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/profile"
+        />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintBottom_toTopOf="@+id/edPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileImage"
+        android:textColor="@color/black"
+        android:background="@color/gray"/>
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Phone Number"
+        app:layout_constraintBottom_toTopOf="@+id/edEmail"
+        app:layout_constraintStart_toStartOf="@+id/edName"
+        app:layout_constraintTop_toBottomOf="@+id/edName"
+        android:textColor="@color/black"
+        android:background="@color/gray"/>
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        app:layout_constraintBottom_toTopOf="@+id/edAddress"
+        app:layout_constraintEnd_toEndOf="@+id/edPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edPhone"
+        android:textColor="@color/black"
+        android:background="@color/gray"/>
+
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Adress"
+        app:layout_constraintBottom_toTopOf="@+id/edPlat1"
+        app:layout_constraintStart_toStartOf="@+id/edPlat1"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail"
+        android:textColor="@color/black"
+        android:background="@color/gray"/>
+
+    <EditText
+        android:id="@+id/edPlat1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Platform1"
+        app:layout_constraintBottom_toTopOf="@+id/edPlat2"
+        app:layout_constraintEnd_toEndOf="@+id/edPlat2"
+        app:layout_constraintTop_toBottomOf="@+id/edAddress"
+        android:textColor="@color/black"
+        android:background="@color/gray"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edPlat2"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edPlat2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Platform2"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/edPhone"
+        app:layout_constraintStart_toStartOf="@+id/edPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edPlat1"
+        android:textColor="@color/black"
+        android:background="@color/gray"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
